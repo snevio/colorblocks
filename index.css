@@ -1,0 +1,43 @@
+ @font-face {
+     font-family: PaperCube;
+     src: url(./font/PaperCube-4W6Y.ttf)
+ }
+
+ body {
+     background-color: black;
+     height: 100vh;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family: PaperCube;
+
+ }
+
+ .bottom-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 5rem;
+ }
+
+
+
+ .title {
+
+     font-size: 5rem;
+
+ }
+
+ #grid-base {
+     transform:
+         perspective(50em) rotateX(50deg);
+     background-color: aliceblue;
+     width: 40rem;
+     height: 40rem;
+     display: grid;
+     grid-template-columns: repeat(var(--columns), 1fr);
+     grid-template-rows: repeat(var(--rows), 1fr);
+
+ }
